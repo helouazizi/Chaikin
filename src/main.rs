@@ -8,8 +8,16 @@ async fn main() {
     let mut timer = 0.0;
     let step_duration = 0.5;
 
+
+
     loop {
+        
         clear_background(BLACK);
+        draw_text("> Mouse-Left-Button: Place points", 20.0, 20.0, 16.0, GREEN);
+        draw_text("> Enter: Start animation", 20.0, 40.0, 16.0, GREEN);
+        draw_text("> C: Clear all points", 20.0, 60.0, 16.0, GREEN);
+        draw_text("> Esc: Exit program", 20.0, 80.0, 16.0, GREEN);
+
         timer += get_frame_time();
 
         // Handle input
